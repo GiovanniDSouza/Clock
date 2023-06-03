@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLOCK</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--Jquery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div id="pai">
+      <div class="dropdown">
+        <i onclick="myFunction()"  class="fa fa-cog dropbtn" id="setting"></i>
+      
+        <div id="myDropdown" class="dropdown-content">
+          <a id="chuva">Chuva</a>
+          <a id="chuvaStop" style="display: none;">Chuva</a>
+          <a id="azul" onclick="trocarcor(id)">Noite</a>
+          <a id="white" onclick="trocarcor(id)" style="display: none;">Dia</a>
+          <a href="https://github.com/GiovanniDSouza">GitHub</a>
+         
+        </div>
+      </div>
+      
+    </div>
+    <main>
+      <div class="rains-container" style="display: none;">
+          <div class="rain"></div>
+          <div class="rain"></div>
+          <div class="rain"></div>
+          <div class="rain"></div>
+          <div class="rain"></div>
+          <div class="rain"></div>
+          <div class="rain"></div>
+          <div class="rain"></div>
+          <div class="rain"></div>
+          <div class="rain"></div>
+          <div class="rain"></div>
+          <div class="rain"></div>
+          <div class="rain"></div>
+          <div class="rain"></div>
+          <div class="rain"></div>
+          <div class="rain"></div>
+          <div class="rain"></div>
+          <div class="rain"></div>
+          <div class="rain"></div>
+          <div class="rain"></div>
+          
+        </div>
+  </main>
+    <div id="clock">
+      <div id="time">
+          <div><span id="hour">00</span><span>Horas</span></div>
+          <div><span id="minutes">00</span><span>Minutos</span></div>
+          <div><span id="seconds">00</span><span>Segundos</span></div>
+          <p class="days" id="date">Domingo, 7 de maio</p>
+      </div>
+      <div class="agua">
+        <div class="cisne"></div>
+      
+      </div>
+  </div>
+
+  </div>
+
+<script src="style.js"></script>
+<script src="styleJq.js"></script>
+</body>
+</html>

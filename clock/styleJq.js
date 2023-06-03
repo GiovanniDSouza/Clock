@@ -1,0 +1,20 @@
+$(document).ready(function(){
+    $('#chuva').click(function(){
+      $('.rains-container').show();
+      $('#chuvaStop').show();
+      $('#chuva').hide();
+    });
+    $('#chuvaStop').click(function(){
+      $('.rains-container').hide();
+      $('#chuva').show();
+      $('#chuvaStop').hide();
+    });
+    $('#azul').click(function(){
+      $('#white').show();
+      $('#azul').hide();
+    });
+    $('#white').click(function(){
+      $('#azul').show();
+      $('#white').hide();
+    });
+  });
