@@ -2,7 +2,8 @@
 #Log
 Um relógio com a função de dia, noite e função de mostra chuva 
 
-Tech used:
+!Tech used:
+
 . HTML5
 . CSS
 . Javascript
