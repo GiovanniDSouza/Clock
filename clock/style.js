@@ -17,6 +17,24 @@ function clock(){
 
 var interval = setInterval(clock, 1000);
 
+
+function clockDigital(){
+  //3° preciso passar isso pro HTML
+  let dateNow = new Date();
+var h = new Date().getHours();
+var m = new Date().getMinutes();
+
+
+var hourss = document.getElementById("hourr").innerHTML = h;
+var minutess = document.getElementById("minutess").innerHTML = m;
+
+
+var fullDate = day[dateNow.getDay()] + ', '  +  dateNow.getDate()  +  ' de '  +  month[dateNow.getMonth()] ; 
+document.getElementById("date").innerHTML = fullDate;
+}
+
+var interval = setInterval(clockDigital, 1000);
+
 //all rains
 const rains= document.querySelectorAll(".rain");
 const getRandomNumber = (min, max)=>{
@@ -50,7 +68,7 @@ window.onclick = function(event) {
 function trocarcor(id) {
   if (id == "azul") {
       document.getElementsByTagName("body")[0].style.background = "#000000ef"
-      document.querySelectorAll(".agua")[1].style.background = "rgb(0 153 255 / 15%)"
+      //document.querySelectorAll(".agua")[1].style.background = "rgb(0 153 255 / 15%)" esta dando erro atualizar o github esta com esse erro
   }
   else if(id == "white"){ document.getElementsByTagName("body")[0].style.background = "#969696da"}
 

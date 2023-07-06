@@ -17,4 +17,17 @@ $(document).ready(function(){
       $('#azul').show();
       $('#white').hide();
     });
+    $('#digital').click(function(){
+      $('#clockDigital').show();
+      $('#clock').hide();
+      $('#digital').hide();
+      $('#clockk').show();
+    });
+
+    $('#clockk').click(function(){
+      $('#clockDigital').hide();
+      $('#clock').show();
+      $('#clockk').hide();
+      $('#digital').show();
+    });
   });
