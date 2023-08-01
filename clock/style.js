@@ -44,33 +44,50 @@ rains.forEach(rain=>{
     rain.style = `--rain-delay:${getRandomNumber(0, 1000)}ms`;
 })
 
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
+  function link() {
+    var btn6 = document.getElementById("btn6");
+    btn6.addEventListener("change", function () {
+      if (btn6.checked == true) {
+    
+       document.getElementById('rain').style.visibility = 'visible';
+      } else {
+        document.getElementById('rain').style.visibility = 'hidden';
+      
       }
-    }
+ 
+    })
+ 
   }
-}
 
-
-function trocarcor(id) {
-  if (id == "azul") {
-      document.getElementsByTagName("body")[0].style.background = "#000000ef"
-      //document.querySelectorAll(".agua")[1].style.background = "rgb(0 153 255 / 15%)" esta dando erro atualizar o github esta com esse erro
+  function trocarcor() {
+    var btn5 = document.getElementById("btn5");
+    btn5.addEventListener("change", function () {
+      if (btn5.checked == true) {
+        document.getElementsByTagName("body")[0].style.background = "#000000ef"
+      } else {
+        document.getElementsByTagName("body")[0].style.background = "#969696da"
+      
+      }
+ 
+    })
+ 
   }
-  else if(id == "white"){ document.getElementsByTagName("body")[0].style.background = "#969696da"}
 
-  
-  console.log(id)}
+  function digital() {
+    var btn4 = document.getElementById("btn4");
+    btn4.addEventListener("change", function () {
+      if (btn4.checked == true) {
+        document.getElementById('clockDigital').style.visibility = 'visible';
+        document.getElementById('clock').style.visibility = 'hidden';
+      } else {
+        document.getElementById('clockDigital').style.visibility = 'hidden';
+        document.getElementById('clock').style.visibility = 'visible';
+      }
+ 
+    })
+ 
+  }

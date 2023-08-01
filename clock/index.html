@@ -7,8 +7,7 @@
   <title>CLOCK</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!--Jquery-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+ 
 </head>
 <body>
   <div class="container">
@@ -17,19 +16,33 @@
         <i onclick="myFunction()"  class="fa fa-cog dropbtn" id="setting"></i>
       
         <div id="myDropdown" class="dropdown-content">
-          <a id="chuva">Chuva</a>
-          <a id="chuvaStop" style="display: none;">Chuva</a>
-          <a id="azul" onclick="trocarcor(id)">Noite</a>
-          <a id="white" onclick="trocarcor(id)" style="display: none;">Dia</a>
+         
+          <div class="texx" id="link">
+            <P>Chuva</P>
+            <div class="center" onclick="link();">
+                <input id="btn6" type="checkbox" name="" value="">
+            </div>
+          </div>
+          <div class="texx" id="link">
+            <P>Noite</P>
+            <div class="center" onclick="trocarcor();">
+                <input id="btn5" type="checkbox" name="" value="">
+            </div>
+          </div>
+          
+          <div class="texx" id="link">
+            <P>Digital</P>
+            <div class="center" onclick="digital();">
+                <input id="btn4" type="checkbox" name="" value="">
+            </div>
+          </div>
           <a href="https://github.com/GiovanniDSouza">GitHub</a>
-          <a id="digital" >Digital</a>
-          <a id="clockk" style="display: none;">Clock</a>
         </div>
       </div>
       
     </div>
     <main >
-      <div class="rains-container" style="display: none;">
+      <div class="rains-container"  id="rain">
           <div class="rain"></div>
           <div class="rain"></div>
           <div class="rain"></div>
@@ -66,7 +79,7 @@
       </div>
     </div>
 
-    <div id="clockDigital" style="display: none;">
+    <div id="clockDigital" >
       <div id="time-hour">
           <div><span id="hourr">00</span><span>Horas</span></div>
           <div><span id="minutess">00</span><span>Minutos</span></div>
