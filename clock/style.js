@@ -13,6 +13,7 @@ function clock(){
 
   var fullDate = day[dateNow.getDay()] + ', '  +  dateNow.getDate()  +  ' de '  +  month[dateNow.getMonth()] ; 
   document.getElementById("date").innerHTML = fullDate;
+  document.getElementById("dat").innerHTML = fullDate;
 }
 
 var interval = setInterval(clock, 1000);
